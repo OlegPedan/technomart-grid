@@ -426,31 +426,27 @@ color: #bbc3cb;
   font-size: 17px;
   font-family: 'Cuprum-Regular';
 }
-/*
-.menu_header a {
-  text-align: center;
-  padding-top: 22px;
-}*/
 
-.index{
-  margin-top: 60px;
+    /*main*/
+
+        /*index*/
+
+
+.index {
+  margin: 50px -10px 43px -10px;
+
 }
 
 .index div {
   width: 300px;
   height: 123px;
   float: left;
-  margin: 0 0 20px 20px;
+  margin: 10px 10px 10px 10px;
   background-color: #f6b22d;
 
 }
 
-.index .materials {
-  margin-left: 0;
-}
-
 .index .slider {
-  margin: 0;
   width: 620px;
   height: 266px;
 }
@@ -461,9 +457,13 @@ color: #bbc3cb;
   clear: both;
 }
 
+.topgoods {
+  margin: 0 -10px;
+}
 .topheader {
+  margin: 10px auto 10px auto;
+  max-width: 940px;
   min-height: 89px;
-  margin-top: 33px;
   background-color: #f7f3ec;
 }
 
@@ -487,7 +487,7 @@ color: #bbc3cb;
   width: 218px;
   height: 316px;
   float: left;
-  margin: 20px 20px -13px 0;
+  margin: 10px 10px 10px 10px;
   background-color:  #f6b22d;
   border: 1px solid #f7f3ec ;
 }
@@ -497,15 +497,16 @@ color: #bbc3cb;
   display: table;
   clear: both;
 }
-.end {
-  margin-right: 0;
+
+.topbrands {
+  margin: 0 -10px;
 }
 
 .logobrands {
   width: 218px;
   height: 143px;
   float: left;
-  margin: 20px 20px 0 0;
+  margin: 10px 10px 10px 10px;
   background-color:  #f6b22d;
   border: 1px solid #f7f3ec ;
 }
@@ -514,10 +515,6 @@ color: #bbc3cb;
   content: "";
   display: table;
   clear: both;
-}
-
-.end {
-  margin-right: 0;
 }
 
 .services {
