@@ -181,7 +181,7 @@ a:hover {
 .headertop p {
   float: left;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 17px;
   font-family: 'Cuprum-Regular';
 }
 
@@ -229,6 +229,7 @@ text-decoration: inherit;
 font-style: normal;
 font-variant: normal;
 speak: none;
+color: #bbc3cb;
 }
 
         /*закладки и корзина*/
@@ -254,6 +255,7 @@ text-decoration: inherit;
 font-style: normal;
 font-variant: normal;
 speak: none;
+color: #bbc3cb;
 }
 .basket{
   margin-top: 8px;
@@ -275,6 +277,7 @@ text-decoration: inherit;
 font-style: normal;
 font-variant: normal;
 speak: none;
+color: #bbc3cb;
 }
 
 .order {
@@ -285,37 +288,133 @@ speak: none;
   background-color: #63a63e;
 }
 
+
+        /*headerbottom*/
+
+
 .headerbottom {
   min-height: 278px;
   background-color: #f1f5f7;
-}
-
-.description {
-  float: left;
-  margin-left: 52px;
-}
-
-.contacts_header {
- float: left;
- margin-left: 71px;
-}
-
-.login {
-  float: left;
-  margin-left: 70px;
-}
-
-.login p {
-  float: left;
 }
 
 .headerbottom_main{
   min-height: 158px;
 }
 
+        /*Описание*/
+
+.description {
+  margin-left: 53px;
+  margin-top: 42px;
+  float: left;
+  color: #ee3643;
+  font-size: 16px;
+  font-family: 'Cuprum-Italic';
+
+}
+
+        /*телефон адрес*/
+
+.contacts_header {
+ margin-top: 46px;
+ float: left;
+ margin-left: 71px;
+}
+
+.telefone {
+  padding-top: 8px;
+  height: 33px;
+  width: 264px;
+  color: #e9292a;
+  font-size: 21px;
+  font-family: 'Cuprum-Regular';
+  border: 3px solid #ffffff;
+}
+
+.telefone::before { content: "\1f4de";
+display: inline-block;
+width: 1em;
+margin-right: 1.5em;
+margin-left: 0.7em;
+
+font-weight: normal;
+line-height: 1em;
+font-family: "symbols-technomart";
+text-align: center;
+text-transform: none;
+text-decoration: inherit;
+font-style: normal;
+font-variant: normal;
+speak: none;
+color: #bbc3cb;
+}
+
+.address {
+  text-align: center;
+  color: #32425c;
+  font-size: 14px;
+  font-family: 'Cuprum-Regular';
+  line-height: 24px;
+}
+
+        /*войти регистрация*/
+
+
+.login {
+  margin-top: 46px;
+  margin-left: 69px;
+  float: left;
+}
+
+.entry {
+  padding-top: 8px;
+  float: left;
+  width: 120px;
+  height: 37px;
+  font-size: 21px;
+  font-family: 'Cuprum-Regular';
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.entry::before { content: "⎆";
+display: inline-block;
+width: 1em;
+margin-right: 0.5em;
+margin-left: 0.5em;
+
+font-weight: normal;
+line-height: 1em;
+font-family: "symbols-technomart";
+text-align: center;
+text-transform: none;
+text-decoration: inherit;
+font-style: normal;
+font-variant: normal;
+speak: none;
+color: #bbc3cb;
+}
+
+.checkin {
+  padding-top: 8px;
+  margin-left: 10px;
+  float: left;
+  width: 150px;
+  height: 37px;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 21px;
+  font-family: 'Cuprum-Regular';
+  color: #000000;
+}
+
+        /*меню headerbottom*/
+
+
 .menu_header {
-  min-height: 60px;
+  min-height: 55px;
   background-color: #32425c;
+  border-bottom: 5px solid #293449;
 }
 
 .menu_header li {
@@ -323,7 +422,9 @@ speak: none;
   margin: 0 calc(100% / 30);
   color: #ffffff;
   text-align: center;
-  margin-top: 22px;
+  margin-top: 17px;
+  font-size: 17px;
+  font-family: 'Cuprum-Regular';
 }
 /*
 .menu_header a {
