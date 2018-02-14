@@ -1,0 +1,571 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote,
+a, font, img, q, ol, ul, li, form {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+/*
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #bebebe;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #bebebe;
+}
+*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #fcdb04;
+}
+    /*Подключение шрифтов*/
+
+@font-face {
+    font-family: 'Cuprum-Bold';
+<<<<<<< HEAD
+    src: url('fonts/cuprum/Cuprum/Cuprum-Bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/cuprum/Cuprum/Cuprum-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/cuprum/web/cuprumbold.woff') format('woff'), /* Modern Browsers */
+    url('fonts/cuprum/web/cuprumbold.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/cuprum/Cuprum/Cuprum-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/cuprum/Cuprum/Cuprum-Bold.svg#svgCuprum-Bold') format('svg'); /* Legacy iOS */
+=======
+    src: url('technomart/fonts/cuprum/Cuprum/Cuprum-Bold.eot'); /* IE9 Compat Modes */
+    src: url('technomart/fonts/cuprum/Cuprum/Cuprum-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('technomart/fonts/cuprum/web/cuprumbold.woff') format('woff'), /* Modern Browsers */
+    url('technomart/fonts/cuprum/web/cuprumbold.woff2') format('woff2'), /* Modern Browsers */
+    url('technomart/fonts/cuprum/Cuprum/Cuprum-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('technomart/fonts/cuprum/Cuprum/Cuprum-Bold.svg#svgCuprum-Bold') format('svg'); /* Legacy iOS */
+>>>>>>> origin/master
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cuprum-BoldItalic';
+<<<<<<< HEAD
+    src: url('fonts/cuprum/Cuprum/Cuprum-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/cuprum/Cuprum/Cuprum-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/cuprum/web/cuprumbolditalic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/cuprum/web/cuprumbolditalic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/cuprum/Cuprum/Cuprum-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/cuprum/Cuprum/Cuprum-BoldItalic.svg#svgCuprum-BoldItalic') format('svg'); /* Legacy iOS */
+=======
+    src: url('technomart/fonts/cuprum/Cuprum/Cuprum-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('technomart/fonts/cuprum/Cuprum/Cuprum-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('technomart/fonts/cuprum/web/cuprumbolditalic.woff') format('woff'), /* Modern Browsers */
+    url('technomart/fonts/cuprum/web/cuprumbolditalic.woff2') format('woff2'), /* Modern Browsers */
+    url('technomart/fonts/cuprum/Cuprum/Cuprum-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('technomart/fonts/cuprum/Cuprum/Cuprum-BoldItalic.svg#svgCuprum-BoldItalic') format('svg'); /* Legacy iOS */
+>>>>>>> origin/master
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cuprum-Italic';
+<<<<<<< HEAD
+    src: url('fonts/cuprum/Cuprum/Cuprum-Italic.eot'); /* IE9 Compat Modes */
+    src: url('fonts/cuprum/Cuprum/Cuprum-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/cuprum/web/cuprumitalic.woff') format('woff'), /* Modern Browsers */
+    url('fonts/cuprum/web/cuprumitalic.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/cuprum/Cuprum/Cuprum-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('tfonts/cuprum/Cuprum/Cuprum-Italic.svg#svgCuprum-Italic') format('svg'); /* Legacy iOS */
+=======
+    src: url('technomart/fonts/cuprum/Cuprum/Cuprum-Italic.eot'); /* IE9 Compat Modes */
+    src: url('technomart/fonts/cuprum/Cuprum/Cuprum-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('technomart/fonts/cuprum/web/cuprumitalic.woff') format('woff'), /* Modern Browsers */
+    url('technomart/fonts/cuprum/web/cuprumitalic.woff2') format('woff2'), /* Modern Browsers */
+    url('technomart/fonts/cuprum/Cuprum/Cuprum-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('technomart/fonts/cuprum/Cuprum/Cuprum-Italic.svg#svgCuprum-Italic') format('svg'); /* Legacy iOS */
+>>>>>>> origin/master
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cuprum-Regular';
+<<<<<<< HEAD
+    src: url('fonts/cuprum/Cuprum/Cuprum-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/cuprum/Cuprum/Cuprum-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/cuprum/web/cuprum.woff') format('woff'), /* Modern Browsers */
+    url('fonts/cuprum/web/cuprum.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/cuprum/Cuprum/Cuprum-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/cuprum/Cuprum/Cuprum-Regular.svg#svgCuprum-Regular') format('svg'); /* Legacy iOS */
+=======
+    src: url('technomart/fonts/cuprum/Cuprum/Cuprum-Regular.eot'); /* IE9 Compat Modes */
+    src: url('technomart/fonts/cuprum/Cuprum/Cuprum-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('technomart/fonts/cuprum/web/cuprum.woff') format('woff'), /* Modern Browsers */
+    url('technomart/fonts/cuprum/web/cuprum.woff2') format('woff2'), /* Modern Browsers */
+    url('technomart/fonts/cuprum/Cuprum/Cuprum-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('technomart/fonts/cuprum/Cuprum/Cuprum-Regular.svg#svgCuprum-Regular') format('svg'); /* Legacy iOS */
+>>>>>>> origin/master
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTSans';
+<<<<<<< HEAD
+    src: url('fonts/cuprum/Cuprum/PTSans.eot'); /* IE9 Compat Modes */
+    src: url('fonts/cuprum/Cuprum/PTSans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/cuprum/web/ptsans.woff') format('woff'), /* Modern Browsers */
+    url('fonts/cuprum/web/ptsans.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/cuprum/Cuprum/PTS55F.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/cuprum/Cuprum/PTSans.svg#svgPTSans') format('svg'); /* Legacy iOS */
+=======
+    src: url('technomart/fonts/cuprum/Cuprum/PTSans.eot'); /* IE9 Compat Modes */
+    src: url('technomart/fonts/cuprum/Cuprum/PTSans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('technomart/fonts/cuprum/web/ptsans.woff') format('woff'), /* Modern Browsers */
+    url('technomart/fonts/cuprum/web/ptsans.woff2') format('woff2'), /* Modern Browsers */
+    url('technomart/fonts/cuprum/Cuprum/PTS55F.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('technomart/fonts/cuprum/Cuprum/PTSans.svg#svgPTSans') format('svg'); /* Legacy iOS */
+>>>>>>> origin/master
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PTSans-Bold';
+<<<<<<< HEAD
+    src: url('fonts/cuprum/Cuprum/PTSans-Bold.eot'); /* IE9 Compat Modes */
+    src: url('fonts/cuprum/Cuprum/PTSans-Bold?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/cuprum/web/ptsansbold.woff') format('woff'), /* Modern Browsers */
+    url('fonts/cuprum/web/ptsansbold.woff2') format('woff2'), /* Modern Browsers */
+    url('fonts/cuprum/Cuprum/PTS75F.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('fonts/cuprum/Cuprum/PTSans-Bold.svg#svgPTSans-Bold') format('svg'); /* Legacy iOS */
+=======
+    src: url('technomart/fonts/cuprum/Cuprum/PTSans-Bold.eot'); /* IE9 Compat Modes */
+    src: url('technomart/fonts/cuprum/Cuprum/PTSans-Bold?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('technomart/fonts/cuprum/web/ptsansbold.woff') format('woff'), /* Modern Browsers */
+    url('technomart/fonts/cuprum/web/ptsansbold.woff2') format('woff2'), /* Modern Browsers */
+    url('technomart/fonts/cuprum/Cuprum/PTS75F.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('technomart/fonts/cuprum/Cuprum/PTSans-Bold.svg#svgPTSans-Bold') format('svg'); /* Legacy iOS */
+>>>>>>> origin/master
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-technomart";
+<<<<<<< HEAD
+  src: url('fonts/iconfonts/symbols-technomart.woff2') format("woff"),
+       url('fonts/iconfonts/symbols-technomart.woff2') format("woff2");
+=======
+  src: url('technomart/fonts/iconfonts/symbols-technomart.woff2') format("woff"),
+       url('technomart/fonts/iconfonts/symbols-technomart.woff2') format("woff2");
+>>>>>>> origin/master
+}
+/*
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-technomart";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+  speak: none;
+}
+*/
+.icon-left::before { content: "\3c"; } /* "&lt;" */
+.icon-right::before { content: "\3e"; } /* "&gt;" */
+.icon-basket::before { content: "\62"; } /* "b" */
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-vk::before { content: "\76"; } /* "v" */
+.icon-up::before { content: "\2c4"; } /* "˄" */
+.icon-down::before { content: "\2c5"; } /* "˅" */
+.icon-left-big::before { content: "\2190"; } /* "←" */
+.icon-right-big::before { content: "\2192"; } /* "→" */
+.icon-login::before { content: "\2386"; } /* "⎆" */
+.icon-logout::before { content: "\241b"; } /* "␛" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-circle::before { content: "\25cb"; } /* "○" */
+.icon-circle-dot::before { content: "\25cf"; } /* "●" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
+.icon-home::before { content: "🏠"; } /* "\1f3e0" */
+.icon-user::before { content: "👨"; } /* "\1f468" */
+.icon-phone::before { content: "📞"; } /* "\1f4de" */
+.icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
+.icon-search::before { content: "🔍"; } /* "\1f50d" */
+.icon-bookmark::before { content: "🔖"; } /* "\1f516" */
+
+    /*header*/
+
+        /*headertop*/
+
+.headertop {
+  min-height: 42px;
+  background-color: #293449;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.headertop p {
+  margin-top: 8px;
+  float: left;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Cuprum-Regular';
+}
+
+        /*Логотип*/
+
+.logo {
+  margin-right: 17px;
+  padding-top: 6px;
+  height: 34px;
+  width: 220px;
+  background-color: #ee3643;
+  border-bottom: 5px solid #b52933;
+  border-top: 1px solid #b52933;
+  position: absolute;
+
+}
+
+.logo h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Cuprum-Bold';
+}
+
+        /*Поиск в headertop*/
+
+.search {
+  margin-left: 220px;
+  width: 270px;
+
+}
+
+.search::before { content: "\1f50d";
+display: inline-block;
+width: 1em;
+margin-right: 0.9em;
+margin-left: 1em;
+
+font-weight: normal;
+line-height: 1em;
+font-family: "symbols-technomart";
+text-align: center;
+text-transform: none;
+text-decoration: inherit;
+font-style: normal;
+font-variant: normal;
+speak: none;
+}
+
+.bookmarks {
+  margin-right: 44px;
+}
+.basket{
+  margin-right: 30px;
+}
+.order {
+  float: left;
+}
+
+.headerbottom {
+  min-height: 278px;
+  background-color: #f1f5f7;
+}
+
+.description {
+  float: left;
+  margin-left: 52px;
+}
+
+.contacts_header {
+ float: left;
+ margin-left: 71px;
+}
+
+.login {
+  float: left;
+  margin-left: 70px;
+}
+
+.login p {
+  float: left;
+}
+
+.headerbottom_main{
+  min-height: 158px;
+}
+
+.menu_header {
+  min-height: 60px;
+  background-color: #32425c;
+}
+
+.menu_header li {
+  float: left;
+  margin: 0 calc(100% / 30);
+  color: #ffffff;
+  text-align: center;
+  margin-top: 22px;
+}
+/*
+.menu_header a {
+  text-align: center;
+  padding-top: 22px;
+}*/
+
+.index{
+  margin-top: 60px;
+}
+
+.index div {
+  width: 300px;
+  height: 123px;
+  float: left;
+  margin: 0 0 20px 20px;
+  background-color: #f6b22d;
+
+}
+
+.index .materials {
+  margin-left: 0;
+}
+
+.index .slider {
+  margin: 0;
+  width: 620px;
+  height: 266px;
+}
+
+.index::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.topheader {
+  min-height: 89px;
+  margin-top: 33px;
+  background-color: #f7f3ec;
+}
+
+.topheader h2 {
+  float: left;
+  margin: 33px 0 0 30px;
+}
+
+.topheader p {
+  float: left;
+  margin: 33px 0 0 373px;
+}
+
+.topheader::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.goods {
+  width: 218px;
+  height: 316px;
+  float: left;
+  margin: 20px 20px -13px 0;
+  background-color:  #f6b22d;
+  border: 1px solid #f7f3ec ;
+}
+
+.topgoods::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.end {
+  margin-right: 0;
+}
+
+.logobrands {
+  width: 218px;
+  height: 143px;
+  float: left;
+  margin: 20px 20px 0 0;
+  background-color:  #f6b22d;
+  border: 1px solid #f7f3ec ;
+}
+
+.topbrands::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.end {
+  margin-right: 0;
+}
+
+.services {
+  margin-top: 85px;
+  padding-top: 68px;
+  min-height: 454px;
+  background-color: #f1f5f7;
+}
+
+.services h2 {
+}
+
+.services p {
+  margin-top: 41px
+}
+
+.servises_main {
+  margin-top: 30px;
+}
+
+.services_menu {
+  float: left;
+  margin-right: 80px;
+}
+
+.services_delivery {
+  max-width: 275px;
+  float: left;
+}
+
+.services_delivery h2 {
+  max-width: inherit;
+}
+.services_delivery p {
+  max-width: inherit;
+}
+
+.servises_main img {
+}
+
+.servises_main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.details {
+  margin-top: 82px;
+  min-height: 536px;
+}
+
+.about_us {
+  max-width: 640px;
+  float: left;
+}
+
+.contacts {
+  max-width: 300px;
+  float: left;
+}
+
+.details::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footertop {
+  background-color: #32425c;
+  min-height: 193px;
+}
+
+.logo_footer {
+  float: left;
+  max-width: 325px;
+  min-height: 193px;
+}
+
+.logo_footer h1 {
+  width: 68px;
+}
+
+.logo_footer p {
+  margin-top: 30px;
+}
+
+.footertop ul{
+  float: left;
+  max-width: 615px;
+}
+
+.menu li {
+  margin: 0 calc(100% / 14);
+  color: #ffffff;
+  text-align: center;
+}
+
+.menu::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu_index li {
+  margin: 0 calc(100% / 9);
+  color: #ffffff;
+  text-align: center;
+}
+.menu_index::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.box::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footerbottom {
+  background-color: #293449;
+  min-height: 107px;
+}
+
+.footerbottom p {
+  float: left;
+}
+
+.social {
+  float: left;
+}
+
+.creators {
+  float: left;
+}
