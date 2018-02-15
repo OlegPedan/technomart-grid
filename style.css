@@ -367,7 +367,7 @@ color: #bbc3cb;
 }
 
 .entry {
-  padding-top: 8px;
+  padding-top: 10px;
   float: left;
   width: 120px;
   height: 37px;
@@ -396,7 +396,7 @@ color: #bbc3cb;
 }
 
 .checkin {
-  padding-top: 8px;
+  padding-top: 10px;
   margin-left: 10px;
   float: left;
   width: 150px;
@@ -442,11 +442,67 @@ color: #bbc3cb;
   height: 123px;
   float: left;
   margin: 10px 10px 10px 10px;
+
+}
+
+.index div h2 {
+  position: relative;
+  margin: 26px 0 0 23px;
+  font-size: 24px;
+  font-family: 'Cuprum-Bold';
+  color: #ffffff;
+}
+
+.index div p {
+  margin: 20px 0 0 25px;
+  padding-top: 6px;
+  width: 135px;
+  height: 24px;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+}
+
+.index div a {
+font-size: 14px;
+font-family: 'Cuprum-Regular';
+color: #ffffff;
+}
+
+.materials {
   background-color: #f6b22d;
 
 }
 
+.materials h2::after { content: url('img/materials.png');
+/*display: inline-block;*/
+position: absolute;
+width: 2em;
+margin-right: 1em;
+margin-left: 3.1em;
+}
+
+.tool {
+  background-color: #4aafde;
+
+}
+
+.equipment {
+  background-color: #cc79d1;
+
+}
+
+.discounts {
+  background-color: #85d179;
+
+}
+
+.delivery {
+  background-color: #f6b22d;
+}
+
 .index .slider {
+  background-image: url('img/slider.png');
   width: 620px;
   height: 266px;
 }
