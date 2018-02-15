@@ -164,6 +164,7 @@ a:hover {
 .icon-search::before { content: "🔍"; } /* "\1f50d" */
 .icon-bookmark::before { content: "🔖"; } /* "\1f516" */
 
+
     /*header*/
 
         /*headertop*/
@@ -434,6 +435,7 @@ color: #bbc3cb;
 
 .index {
   margin: 50px -10px 43px -10px;
+  position: relative;
 
 }
 
@@ -480,6 +482,16 @@ position: absolute;
 width: 2em;
 margin-right: 1em;
 margin-left: 3.1em;
+}
+
+.materials::after { content: url('img/new.png');
+/*display: inline-block;*/
+position: absolute;
+left: 250px;
+top:10px;
+width: 4em;
+margin-right: 0;
+margin-left: 0;
 }
 
 .tool {
