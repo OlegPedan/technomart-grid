@@ -454,13 +454,13 @@ color: #bbc3cb;
 }
 
 .index div p {
-  margin: 20px 0 0 25px;
-  padding-top: 6px;
+  margin: 10px 0 0 22px;
+  padding-top: 8px;
   width: 135px;
-  height: 24px;
+  height: 26px;
   background-color: rgba(0, 0, 0, 0.1);
   border: 2px solid rgba(0, 0, 0, 0);
-  border-radius: 2px;
+  border-radius: 4px;
   text-align: center;
 
 }
@@ -574,13 +574,13 @@ width: auto;
 }
 
  .slider .slider_button {
-  margin: 105px 0 0 26px;
-  padding-top: 8px;
+  margin: 108px 0 0 26px;
+  padding-top: 6px;
   width: 196px;
-  height: 30px;
+  height: 28px;
   background-color: #ee3643;
   border: 2px solid rgba(0, 0, 0, 0);
-  border-radius: 2px;
+  border-radius: 4px;
   font-family: 'Cuprum-Regular';
   font-size: 18px;
   color: #ffffff;
@@ -651,12 +651,26 @@ color: #ffffff;
 
 .topheader h2 {
   float: left;
-  margin: 33px 0 0 30px;
+  min-width: 367px;
+  margin: 26px 0 0 30px;
+  font-family: 'Cuprum-Regular';
+  font-size: 30px;
+
 }
 
 .topheader p {
   float: left;
-  margin: 33px 0 0 373px;
+  margin: 25px 0 0 265px;
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Cuprum-Regular';
+  font-size: 14px;
+  color: #ffffff;
+  width: 249px;
+  height: 24px;
+  background-color: #ee3643;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
 }
 
 .topheader::after {
@@ -700,6 +714,19 @@ color: #ffffff;
   color: rgba(0, 0, 0, 0);
 }
 
+.new {
+  position: relative;
+}
+
+.new::after { content: url('img/new.png');
+position: absolute;
+right: -2px;
+top:0px;
+width: 4em;
+margin-right: 0;
+margin-left: 0;
+}
+
 .goods .button {
   position: relative;
   margin-top: 8px;
@@ -709,7 +736,7 @@ color: #ffffff;
   height: 27px;
   background-color: #ee3643;
   border: 2px solid rgba(0, 0, 0, 0);
-  border-radius: 2px 0 0 2px;
+  border-radius: 4px 0 0 4px;
   border-right: 2px solid #ee3643;
 
   text-align: center;
