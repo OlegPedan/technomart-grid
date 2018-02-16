@@ -592,8 +592,6 @@ position: absolute;
 left: 26px;
 top: 114px;
 width: 0.5em;
-/*margin-left: 26px;
-margin-top: 114px;*/
 font-size: 40px;
 
 font-weight: normal;
@@ -669,11 +667,67 @@ color: #ffffff;
 
 .goods {
   width: 218px;
-  height: 316px;
+  height: 277px;
+  padding-top: 39px;
   float: left;
   margin: 10px 10px 10px 10px;
-  background-color:  #f6b22d;
   border: 1px solid #f7f3ec ;
+  text-align: center;
+}
+
+.goods h3 {
+  margin-top: 41px;
+  text-align: center;
+  font-family: 'Cuprum-Bold';
+  font-size: 17px;
+  color: #000000;
+}
+
+.goods p {
+  margin-top: 12px;
+  text-align: center;
+  font-family: 'Cuprum-Bold';
+  font-size: 17px;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.new p {
+
+  text-align: center;
+  font-family: 'Cuprum-Bold';
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0);
+}
+
+.goods .button {
+  position: relative;
+  margin-top: 8px;
+  margin-left: 43px;
+  padding-top: 9px;
+  width: 118px;
+  height: 27px;
+  background-color: #ee3643;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 2px 0 0 2px;
+  border-right: 2px solid #ee3643;
+
+  text-align: center;
+  font-family: 'Cuprum-Bold';
+  font-size: 17px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.goods .button::after{
+  content: "";
+  position: absolute;
+  right: -42px;
+  top: -2px;
+  height: 0px;
+  width: 0px;
+border: 20px solid transparent;
+border-left: 20px solid #ee3643;
+
 }
 
 .topgoods::after {
@@ -692,7 +746,7 @@ color: #ffffff;
   float: left;
   margin: 10px 10px 10px 10px;
   background-color:  #f6b22d;
-  border: 1px solid #f7f3ec ;
+  border: 1px solid #f7f3ec;
 }
 
 .topbrands::after {
