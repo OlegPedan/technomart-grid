@@ -459,6 +459,8 @@ color: #bbc3cb;
   width: 135px;
   height: 24px;
   background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 2px;
   text-align: center;
 
 }
@@ -572,11 +574,13 @@ width: auto;
 }
 
  .slider .slider_button {
-  margin: 115px 0 0 26px;
+  margin: 105px 0 0 26px;
   padding-top: 8px;
   width: 196px;
   height: 30px;
   background-color: #ee3643;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 2px;
   font-family: 'Cuprum-Regular';
   font-size: 18px;
   color: #ffffff;
