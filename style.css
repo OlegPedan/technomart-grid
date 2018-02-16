@@ -625,21 +625,21 @@ speak: none;
 color: #ffffff;
 }
 
-.icon-up::before { content: "\2c4"; } /* "˄" */
-.icon-down::before { content: "\2c5"; } /* "˅" */
-.icon-left-big::before { content: "\2190"; } /* "←" */
-.icon-right-big::before { content: "\2192"; } /* "→" */
-
-
 .index::after {
   content: "";
   display: table;
   clear: both;
 }
 
+
+        /*Топ товаров*/
+
 .topgoods {
   margin: 0 -10px;
 }
+
+        /*Заголовок топ товаров*/
+
 .topheader {
   margin: 10px auto 10px auto;
   max-width: 940px;
