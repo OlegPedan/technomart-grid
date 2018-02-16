@@ -548,6 +548,7 @@ width: 3em;
   background-image: url('img/slider.png');
   width: 620px;
   height: 266px;
+  position: relative;
 
 }
 
@@ -581,6 +582,54 @@ width: auto;
   color: #ffffff;
   text-align: center;
 }
+
+.slider::before { content:  "<";
+position: absolute;
+left: 26px;
+top: 114px;
+width: 0.5em;
+/*margin-left: 26px;
+margin-top: 114px;*/
+font-size: 40px;
+
+font-weight: normal;
+line-height: 1em;
+font-family: "symbols-technomart";
+text-align: center;
+text-transform: none;
+text-decoration: inherit;
+font-style: normal;
+font-variant: normal;
+speak: none;
+color: #ffffff;
+}
+
+.slider::after { content:  ">" ;
+position: absolute;
+right: 26px;
+top: 114px;
+width: 0.5em;
+margin-top: 0em;
+margin-right: 0em;
+margin-left: ;
+font-size: 40px;
+font-weight: normal;
+line-height: 1em;
+font-family: "symbols-technomart";
+text-align: center;
+text-transform: none;
+text-decoration: inherit;
+font-style: normal;
+font-variant: normal;
+speak: none;
+color: #ffffff;
+}
+
+.icon-up::before { content: "\2c4"; } /* "˄" */
+.icon-down::before { content: "\2c5"; } /* "˅" */
+.icon-left-big::before { content: "\2190"; } /* "←" */
+.icon-right-big::before { content: "\2192"; } /* "→" */
+
 
 .index::after {
   content: "";
