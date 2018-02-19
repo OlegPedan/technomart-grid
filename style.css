@@ -912,17 +912,89 @@ transform: translateY(-50%);
   min-height: 536px;
 }
 
+
+.details h2 {
+  font-family: 'Cuprum-Regular';
+  font-size: 27px;
+  color: #000000;
+}
+
+.details p {
+  margin-top: 33px;
+  font-family:'Cuprum-Regular';
+  font-size: 14px;
+  color: #000000;
+  line-height: 24px;
+}
+
 .about_us {
-  max-width: 640px;
+  max-width: 521px;
   float: left;
 }
+
+.about_us .button {
+padding-top: 7px;
+text-align: center;
+font-family: 'Cuprum-Regular';
+font-size: 14px;
+color: #ffffff;
+width: 220px;
+height: 27px;
+background-color: #ee3643;
+border: 2px solid rgba(0, 0, 0, 0);
+border-radius: 4px;
+}
+
+.details li {
+position: relative;
+margin-left: 36px;
+margin-top: 20px;
+  font-family:'Cuprum-Bold';
+  font-size: 18px;
+  color: #000000;
+}
+
+.details ul {
+  margin-top: 20px;
+
+}
+
+.details li::before {
+  content: "";
+  left: -36px;
+  top: 10px;
+
+  width: 25px;
+  border-top: 2px solid #fb565a;
+  position: absolute;
+
+}
+
 
 .contacts {
-  max-width: 300px;
+  margin-left: 110px;
   float: left;
 }
 
-.details::after {
+.contacts img {
+  padding-top: 40px;
+}
+
+.contacts .button {
+padding-top: 7px;
+text-align: center;
+font-family: 'Cuprum-Regular';
+font-size: 14px;
+color: #ffffff;
+width: 220px;
+height: 27px;
+background-color: #ee3643;
+border: 2px solid rgba(0, 0, 0, 0);
+border-radius: 4px;
+}
+
+
+.container::after {
   content: "";
   display: table;
   clear: both;
@@ -940,22 +1012,40 @@ transform: translateY(-50%);
 }
 
 .logo_footer h1 {
-  width: 68px;
+
+  padding-top: 15px;
+  height: 51px;
+  width: 220px;
+  background-color: #ee3643;
+  border-bottom: 5px solid #b52933;
+  border-top: 1px solid #b52933;
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Cuprum-Bold';
 }
+
 
 .logo_footer p {
   margin-top: 30px;
+  font-size: 18px;
+  font-family: 'Cuprum-Regular';
+    color: #ffffff;
 }
 
 .footertop ul{
   float: left;
+  width: 100%;
   max-width: 615px;
+  margin-top: 42px;
 }
 
 .menu li {
-  margin: 0 calc(100% / 14);
+  display: inline;
+  /*margin-left: calc(100% / 11);*/
   color: #ffffff;
-  text-align: center;
+  font-size: 17px;
+  font-family: 'Cuprum-Regular';
 }
 
 .menu::after {
@@ -965,10 +1055,13 @@ transform: translateY(-50%);
 }
 
 .menu_index li {
-  margin: 0 calc(100% / 9);
+  display: inline;
+  /*margin-left: calc(100% / 9);*/
   color: #ffffff;
-  text-align: center;
+  font-size: 17px;
+  font-family: 'Cuprum-Regular';
 }
+
 .menu_index::after {
   content: "";
   display: table;
