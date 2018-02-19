@@ -208,7 +208,8 @@ a:hover {
 
 }
 
-.search::before { content: "\1f50d";
+.search::before {
+content: "\1f50d";
 display: inline-block;
 width: 1em;
 margin-right: 0.9em;
@@ -784,6 +785,9 @@ border-left: 20px solid #ee3643;
   clear: both;
 }
 
+
+        /*Топ бренды*/
+
 .topbrands {
   margin: 0 -10px;
 }
@@ -793,8 +797,15 @@ border-left: 20px solid #ee3643;
   height: 143px;
   float: left;
   margin: 10px 10px 10px 10px;
-  background-color:  #f6b22d;
   border: 1px solid #f7f3ec;
+
+}
+
+.logobrands img {
+  display: block;
+  padding: 1em 1em;
+  margin: 9vh auto 0;
+transform: translateY(-50%);
 }
 
 .topbrands::after {
@@ -802,6 +813,9 @@ border-left: 20px solid #ee3643;
   display: table;
   clear: both;
 }
+
+
+        /*Сервисы*/
 
 .services {
   margin-top: 85px;
