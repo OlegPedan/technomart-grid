@@ -819,40 +819,78 @@ transform: translateY(-50%);
 
 .services {
   margin-top: 85px;
-  padding-top: 68px;
-  min-height: 454px;
+  padding-top: 65px;
+  min-height: 457px;
   background-color: #f1f5f7;
 }
 
 .services h2 {
+  font-family: 'Cuprum-Regular';
+  font-size: 27px;
+  color: #000000;
 }
 
 .services p {
-  margin-top: 41px
+  margin-top: 33px;
+  font-family:'Cuprum-Regular';
+  font-size: 14px;
+  color: #000000;
+  line-height: 24px;
 }
 
 .servises_main {
-  margin-top: 30px;
+  margin-top: 77px;
+}
+
+.servises_main   h2 {
+  font-size: 31px;
+  color: #32425c;
 }
 
 .services_menu {
   float: left;
   margin-right: 80px;
+  position: relative;
+}
+
+.services_menu li {
+  width: 217px;
+  height: 40px;
+  background-color: #32425c;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
+
+  font-family:'Cuprum-Regular';
+  font-size: 20px;
+  color: #ffffff;
+  padding-top: 18px;
+  padding-left: 23px;
+}
+
+.services_menu::after {
+  content: url('img/vertical_line.png');
+  position: absolute;
+  right: 0px;
+  top: -48px;
+
 }
 
 .services_delivery {
+  position: relative;
+  max-width: inherit;
   max-width: 275px;
   float: left;
 }
 
-.services_delivery h2 {
-  max-width: inherit;
-}
-.services_delivery p {
-  max-width: inherit;
+.services_delivery::after {
+  content: url('img/truck.png');
+  position: absolute;
+  left: 113px;
+  top: 2px;
 }
 
-.servises_main img {
+.services_delivery p {
+  max-width: inherit;
 }
 
 .servises_main::after {
@@ -860,6 +898,14 @@ transform: translateY(-50%);
   display: table;
   clear: both;
 }
+
+.servises::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 
 .details {
   margin-top: 82px;
