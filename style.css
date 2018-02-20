@@ -414,7 +414,8 @@ color: #bbc3cb;
 
 .menu_header li {
   float: left;
-  margin: 0 calc(100% / 30);
+  margin-left: 50px;
+  margin-right: 10px;
   color: #ffffff;
   text-align: center;
   margin-top: 17px;
@@ -1035,6 +1036,7 @@ border-radius: 4px;
 
 .footertop ul{
   float: left;
+  text-align: right;
   width: 100%;
   max-width: 615px;
   margin-top: 42px;
@@ -1042,6 +1044,7 @@ border-radius: 4px;
 
 .menu li {
   display: inline;
+  margin-left: 60px;
   /*margin-left: calc(100% / 11);*/
   color: #ffffff;
   font-size: 17px;
@@ -1056,8 +1059,9 @@ border-radius: 4px;
 
 .menu_index li {
   display: inline;
+    margin-left: 60px;
   /*margin-left: calc(100% / 9);*/
-  color: #ffffff;
+  color: #f1c77e;
   font-size: 17px;
   font-family: 'Cuprum-Regular';
 }
@@ -1080,13 +1084,130 @@ border-radius: 4px;
 }
 
 .footerbottom p {
+  margin-top: 40px;
   float: left;
+  color: #ffffff;
+  font-size: 17px;
+  font-family: 'Cuprum-Regular';
 }
 
 .social {
   float: left;
+  margin-left: 150px;
+  margin-top: 40px;
+}
+
+.vk {
+  float: left;
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;
+  background: #212a3a;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+
+}
+
+.vk::before {
+content: "v";
+display: inline-block;
+width: 1em;
+margin-right: 0.5em;
+margin-left: 0.7em;
+margin-top: 10px;
+
+font-weight: normal;
+line-height: 1em;
+font-family: "symbols-technomart";
+text-align: center;
+text-transform: none;
+text-decoration: inherit;
+font-style: normal;
+font-variant: normal;
+speak: none;
+color: #ffffff;
+}
+
+.facebook{
+
+  float: left;
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;
+  background: #212a3a;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+}
+
+.facebook::before {
+content: "f";
+display: inline-block;
+width: 1em;
+margin-right: 0.5em;
+margin-left: 0.7em;
+margin-top: 10px;
+
+font-weight: normal;
+line-height: 1em;
+font-family: "symbols-technomart";
+text-align: center;
+text-transform: none;
+text-decoration: inherit;
+font-style: normal;
+font-variant: normal;
+speak: none;
+color: #ffffff;
+}
+
+.instagram {
+
+  float: left;
+  margin-left: 5px;
+  width: 40px;
+  height: 40px;
+  background: #212a3a;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+}
+
+.instagram::before {
+content: "\1f4f7";
+display: inline-block;
+width: 1em;
+margin-right: 0em;
+margin-left: 0.75em;
+margin-top: 10px;
+
+font-weight: normal;
+line-height: 1em;
+font-family: "symbols-technomart";
+text-align: center;
+text-transform: none;
+text-decoration: inherit;
+font-style: normal;
+font-variant: normal;
+speak: none;
+color: #ffffff;
 }
 
 .creators {
+  display: inline;
   float: left;
+  margin-left: 70px;
+  margin-top: 40px;
+  color: #ffffff;
+  font-size: 17px;
+  font-family: 'Cuprum-Regular';
+}
+
+.creators a {
+  color: #f1c77e;
+}
+
+.creators ul {
+  float: left;
+  margin-left: 50px;
 }
