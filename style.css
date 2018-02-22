@@ -139,10 +139,6 @@ a:hover {
 */
 .icon-left::before { content: "\3c"; } /* "&lt;" */
 .icon-right::before { content: "\3e"; } /* "&gt;" */
-.icon-basket::before { content: "\62"; } /* "b" */
-.icon-facebook::before { content: "\66"; } /* "f" */
-.icon-twitter::before { content: "\74"; } /* "t" */
-.icon-vk::before { content: "\76"; } /* "v" */
 .icon-up::before { content: "\2c4"; } /* "˄" */
 .icon-down::before { content: "\2c5"; } /* "˅" */
 .icon-left-big::before { content: "\2190"; } /* "←" */
@@ -154,7 +150,6 @@ a:hover {
 
 .icon-home::before { content: "🏠"; } /* "\1f3e0" */
 .icon-user::before { content: "👨"; } /* "\1f468" */
-.icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
 
 
 
@@ -192,6 +187,10 @@ a:hover {
 
 }
 
+.logo:hover {
+  background-color: #ca2c37;
+}
+
 .logo h1 {
   color: #ffffff;
   text-align: center;
@@ -202,29 +201,77 @@ a:hover {
         /*Поиск*/
 
 .search {
-  margin-top: 8px;
   margin-left: 220px;
-  width: 270px;
+  float: left;
+  position: relative;
+
 
 }
 
-.search::before {
-content: "\1f50d";
-display: inline-block;
-width: 1em;
-margin-right: 0.9em;
-margin-left: 1em;
+.search form {
+  background-color: inherit;
+}
+.search input, .search button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.search input {
+  width:220px;
+  height: 42px;
+  padding-left: 50px;
+  color: #ffffff;
+  font-size: 17px;
+  font-family: 'Cuprum-Regular';
 
-font-weight: normal;
-line-height: 1em;
-font-family: "symbols-technomart";
-text-align: center;
-text-transform: none;
-text-decoration: inherit;
-font-style: normal;
-font-variant: normal;
-speak: none;
-color: #bbc3cb;
+
+}
+.search button {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.search button::before {
+  content: "\1f50d";
+  position: absolute;
+  font-size: 17px;
+  top: 12px;
+  left: 17px;
+  cursor: pointer;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-technomart";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+  speak: none;
+  color: #bbc3cb;
+}
+
+.search button:focus::before {
+  color: #ee3643;
+}
+
+button:focus {
+  background: #ffffff;
+}
+
+input#text{
+  font-weight: bold;
+  color: #ffffff;
+}
+
+input#text:focus {
+  background-color: #ffffff;
+  color: #111111;
+  outline:none;
+}
+
+.search button:focus::before {
+  color: #ee3643;
 }
 
         /*закладки и корзина*/
@@ -252,6 +299,7 @@ font-variant: normal;
 speak: none;
 color: #bbc3cb;
 }
+
 .basket{
   margin-top: 8px;
   width: 150px;
@@ -275,6 +323,12 @@ speak: none;
 color: #bbc3cb;
 }
 
+.basket:hover::before,
+.bookmarks:hover::before,
+button:hover::before  {
+  color: #ffffff;
+}
+
 .order {
   padding-top: 8px;
   width: 150px;
@@ -283,7 +337,15 @@ color: #bbc3cb;
   background-color: #63a63e;
 }
 
+.order:hover {
+  background-color: #5fbb2d;
+}
 
+.headertop .container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
         /*headerbottom*/
 
 
@@ -403,6 +465,29 @@ color: #bbc3cb;
   color: #000000;
 }
 
+.entry:hover,
+.checkin:hover{
+  color: #ee3643;
+}
+
+.entry:hover::before { content: "⎆";
+display: inline-block;
+width: 1em;
+margin-right: 0.5em;
+margin-left: 0.5em;
+
+font-weight: normal;
+line-height: 1em;
+font-family: "symbols-technomart";
+text-align: center;
+text-transform: none;
+text-decoration: inherit;
+font-style: normal;
+font-variant: normal;
+speak: none;
+color: #32425c;
+}
+
         /*меню headerbottom*/
 
 
@@ -414,6 +499,7 @@ color: #bbc3cb;
 
 .menu_header li {
   float: left;
+  width: calc(100%)
   margin-left: 50px;
   margin-right: 10px;
   color: #ffffff;
@@ -794,19 +880,23 @@ border-left: 20px solid #ee3643;
 }
 
 .logobrands {
+  display: table-cell;
+  line-height: 143px;
+  text-align: center;
   width: 218px;
   height: 143px;
   float: left;
-  margin: 10px 10px 10px 10px;
+  margin: 10px;
   border: 1px solid #f7f3ec;
 
 }
 
 .logobrands img {
-  display: block;
+  vertical-align: middle;
+  /*display: block;
   padding: 1em 1em;
   margin: 9vh auto 0;
-transform: translateY(-50%);
+transform: translateY(-50%);*/
 }
 
 .topbrands::after {
