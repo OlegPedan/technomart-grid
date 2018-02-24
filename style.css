@@ -1,42 +1,29 @@
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote,
 a, font, img, q, ol, ul, li, form {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-weight: inherit;
-    font-style: inherit;
-    font-size: 100%;
-    font-family: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 ul {
-    list-style: none;
-}
-/*
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    color: #bebebe;
+  list-style: none;
 }
 
-input::-moz-placeholder, textarea::-moz-placeholder {
-    color: #bebebe;
-}
-*/
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
-
-a:hover {
-    color: #fcdb04;
-}
-    /*Подключение шрифтов*/
 
 @font-face {
     font-family: 'Cuprum-Bold';
@@ -118,40 +105,6 @@ a:hover {
   src: url('fonts/iconfonts/symbols-technomart.woff2') format("woff"),
        url('fonts/iconfonts/symbols-technomart.woff2') format("woff2");
 }
-/*
-[class^="icon-"]::before,
-[class*=" icon-"]::before {
-  display: inline-block;
-  width: 1em;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
-
-  font-weight: normal;
-  line-height: 1em;
-  font-family: "symbols-technomart";
-  text-align: center;
-  text-transform: none;
-  text-decoration: inherit;
-  font-style: normal;
-  font-variant: normal;
-  speak: none;
-}
-*/
-.icon-left::before { content: "\3c"; } /* "&lt;" */
-.icon-right::before { content: "\3e"; } /* "&gt;" */
-.icon-up::before { content: "\2c4"; } /* "˄" */
-.icon-down::before { content: "\2c5"; } /* "˅" */
-.icon-left-big::before { content: "\2190"; } /* "←" */
-.icon-right-big::before { content: "\2192"; } /* "→" */
-.icon-login::before { content: "\2386"; } /* "⎆" */
-.icon-logout::before { content: "\241b"; } /* "␛" */
-.icon-up-dir::before { content: "\25b2"; } /* "▲" */
-.icon-down-dir::before { content: "\25bc"; } /* "▼" */
-
-.icon-home::before { content: "🏠"; } /* "\1f3e0" */
-.icon-user::before { content: "👨"; } /* "\1f468" */
-
-
 
     /*header*/
 
@@ -163,100 +116,96 @@ a:hover {
 }
 
 .container {
-  max-width: 940px;
   margin: 0 auto;
+  max-width: 940px;
 }
 
 .headertop p {
   float: left;
-  color: #ffffff;
   font-size: 17px;
   font-family: 'Cuprum-Regular';
+  color: #ffffff;
 }
 
-        /*Логотип*/
+        /*logo*/
 
 .logo {
-  padding-top: 6px;
-  height: 34px;
-  width: 220px;
-  background-color: #ee3643;
-  border-bottom: 5px solid #b52933;
-  border-top: 1px solid #b52933;
   position: absolute;
-
+  height: 46px;
+  width: 220px;
 }
 
-.logo:hover {
-  background-color: #ca2c37;
-}
-
-.logo h1 {
-  color: #ffffff;
+.logo a {
+  display: block;
+  padding-top: 6px;
+  height: 36px;
   text-align: center;
   font-size: 24px;
   font-family: 'Cuprum-Bold';
+  color: #ffffff;
+  background-color: #ee3643;
+  border-bottom: 5px solid #b52933;
+  border-top: 1px solid #b52933;
 }
 
-        /*Поиск*/
+.logo a:hover {
+  background-color: #ca2c37;
+}
+
+.logo a:active {
+  background-color: #ba2732;
+}
+
+        /*search*/
 
 .search {
-  margin-left: 220px;
-  float: left;
   position: relative;
-
-
+  float: left;
+  margin-left: 220px;
 }
 
 .search form {
   background-color: inherit;
 }
+
 .search input, .search button {
   border: none;
   outline: none;
   background: transparent;
 }
+
 .search input {
   width:220px;
   height: 42px;
   padding-left: 50px;
-  color: #ffffff;
   font-size: 17px;
   font-family: 'Cuprum-Regular';
-
-
+  color: #ffffff;
 }
+
 .search button {
   position: absolute;
   top: 0;
   left: 0;
 }
+
 .search button::before {
   content: "\1f50d";
   position: absolute;
-  font-size: 17px;
   top: 12px;
   left: 17px;
-  cursor: pointer;
-
-  font-weight: normal;
+  font-size: 17px;
   line-height: 1em;
   font-family: "symbols-technomart";
+  color: #bbc3cb;
+  cursor: pointer;
+  font-weight: normal;
   text-align: center;
   text-transform: none;
   text-decoration: inherit;
   font-style: normal;
   font-variant: normal;
   speak: none;
-  color: #bbc3cb;
-}
-
-.search button:focus::before {
-  color: #ee3643;
-}
-
-button:focus {
-  background: #ffffff;
 }
 
 input#text{
@@ -270,66 +219,89 @@ input#text:focus {
   outline:none;
 }
 
-.search button:focus::before {
-  color: #ee3643;
-}
-
-        /*закладки и корзина*/
-
-
-.bookmarks {
-  margin-top: 8px;
-  width: 150px;
-}
-
-.bookmarks::before { content: "\1f516";
-display: inline-block;
-width: 1em;
-margin-right: 0.9em;
-margin-left: 1em;
-
-font-weight: normal;
-line-height: 1em;
-font-family: "symbols-technomart";
-text-align: center;
-text-transform: none;
-text-decoration: inherit;
-font-style: normal;
-font-variant: normal;
-speak: none;
-color: #bbc3cb;
-}
-
-.basket{
-  margin-top: 8px;
-  width: 150px;
-}
-
-.basket::before { content: "b";
-display: inline-block;
-width: 1em;
-margin-right: 0.9em;
-margin-left: 1em;
-
-font-weight: normal;
-line-height: 1em;
-font-family: "symbols-technomart";
-text-align: center;
-text-transform: none;
-text-decoration: inherit;
-font-style: normal;
-font-variant: normal;
-speak: none;
-color: #bbc3cb;
-}
-
-.basket:hover::before,
-.bookmarks:hover::before,
-button:hover::before  {
+input#text:hover ~ button::before  {
   color: #ffffff;
 }
 
-.order {
+input#text:focus ~ button::before  {
+  color: #ee3643;
+}
+
+        /*bookmarks & basket*/
+
+.bookmarks {
+  height: 42px;
+}
+
+.bookmarks a {
+  display: block;
+  padding-top: 8px;
+  height: 34px;
+  width: 150px;
+}
+
+.bookmarks a::before {
+  content: "\1f516";
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.9em;
+  margin-left: 1em;
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-technomart";
+  color: #bbc3cb;
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+  speak: none;
+}
+
+.basket {
+  height: 42px;
+}
+
+.basket a {
+  display: block;
+  padding-top: 8px;
+  height: 34px;
+  width: 150px;
+}
+
+.basket a::before {
+  content: "b";
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.9em;
+  margin-left: 1em;
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-technomart";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+  speak: none;
+  color: #bbc3cb;
+}
+
+.bookmarks a:hover::before,
+.basket a:hover::before {
+  color: #ffffff;
+}
+
+.bookmarks a:active,
+.basket a:active,
+.bookmarks a:active::before,
+.basket a:active::before {
+  color: #8b8e94;
+  background-color: #161d29;
+}
+
+.order a {
+  display: block;
   padding-top: 8px;
   width: 150px;
   height: 34px;
@@ -337,8 +309,13 @@ button:hover::before  {
   background-color: #63a63e;
 }
 
-.order:hover {
+.order a:hover {
   background-color: #5fbb2d;
+}
+
+.order a:active {
+  background-color: #518534;
+  color: #a4bf94;
 }
 
 .headertop .container::after {
@@ -373,9 +350,9 @@ button:hover::before  {
         /*телефон адрес*/
 
 .contacts_header {
- margin-top: 46px;
- float: left;
- margin-left: 71px;
+   margin-top: 46px;
+   margin-left: 71px;
+   float: left;
 }
 
 .telefone {
@@ -388,30 +365,30 @@ button:hover::before  {
   border: 3px solid #ffffff;
 }
 
-.telefone::before { content: "\1f4de";
-display: inline-block;
-width: 1em;
-margin-right: 1.5em;
-margin-left: 0.7em;
-
-font-weight: normal;
-line-height: 1em;
-font-family: "symbols-technomart";
-text-align: center;
-text-transform: none;
-text-decoration: inherit;
-font-style: normal;
-font-variant: normal;
-speak: none;
-color: #bbc3cb;
+.telefone::before {
+  content: "\1f4de";
+  display: inline-block;
+  width: 1em;
+  margin-right: 1.5em;
+  margin-left: 0.7em;
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-technomart";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+  speak: none;
+  color: #bbc3cb;
 }
 
 .address {
-  text-align: center;
-  color: #32425c;
   font-size: 14px;
   font-family: 'Cuprum-Regular';
   line-height: 24px;
+  text-align: center;
+  color: #32425c;
 }
 
         /*войти регистрация*/
@@ -434,22 +411,27 @@ color: #bbc3cb;
   color: #000000;
 }
 
-.entry::before { content: "⎆";
-display: inline-block;
-width: 1em;
-margin-right: 0.5em;
-margin-left: 0.5em;
+.entry a {
+  display: block;
+  height: 100%;
+}
 
-font-weight: normal;
-line-height: 1em;
-font-family: "symbols-technomart";
-text-align: center;
-text-transform: none;
-text-decoration: inherit;
-font-style: normal;
-font-variant: normal;
-speak: none;
-color: #bbc3cb;
+.entry a::before {
+  content: "⎆";
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-technomart";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+  speak: none;
+  color: #bbc3cb;
 }
 
 .checkin {
@@ -465,48 +447,56 @@ color: #bbc3cb;
   color: #000000;
 }
 
-.entry:hover,
-.checkin:hover{
+.checkin a {
+  display: block;
+  height: 100%;
+}
+
+.entry a:hover,
+.checkin a:hover{
   color: #ee3643;
 }
 
-.entry:hover::before { content: "⎆";
-display: inline-block;
-width: 1em;
-margin-right: 0.5em;
-margin-left: 0.5em;
-
-font-weight: normal;
-line-height: 1em;
-font-family: "symbols-technomart";
-text-align: center;
-text-transform: none;
-text-decoration: inherit;
-font-style: normal;
-font-variant: normal;
-speak: none;
-color: #32425c;
+.entry a:hover::before {
+  color: #32425c;
 }
 
-        /*меню headerbottom*/
+.entry a:active,
+.checkin a:active,
+.entry a:active::before {
+  color: #b2b2b2;
+}
+
+        /*menu headerbottom*/
 
 
-.menu_header {
-  min-height: 55px;
+.menu_header li {
+  display: inline-block;
+}
+
+.menu_header a {
+  display: block;
+  min-height: 33px;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 17px;
+  font-size: 17px;
+  font-family: 'Cuprum-Regular';
   background-color: #32425c;
   border-bottom: 5px solid #293449;
 }
 
-.menu_header li {
-  float: left;
-  width: calc(100%)
-  margin-left: 50px;
-  margin-right: 10px;
-  color: #ffffff;
-  text-align: center;
-  margin-top: 17px;
-  font-size: 17px;
-  font-family: 'Cuprum-Regular';
+.menu_header li{
+  margin-right: -4px;
+  width: calc(100%/7);
+}
+
+.menu_header a:hover {
+  background-color: #293449;
+}
+
+.menu_header a:active {
+  color: #8e939c;
 }
 
     /*main*/
@@ -536,203 +526,272 @@ color: #32425c;
 
 .index div p {
   margin: 10px 0 0 22px;
-  padding-top: 8px;
   width: 135px;
-  height: 26px;
+  height: 24px;
+}
+
+.index a {
+  display: block;
+  height: 100%;
+  padding-top: 10px;
   background-color: rgba(0, 0, 0, 0.1);
   border: 2px solid rgba(0, 0, 0, 0);
   border-radius: 4px;
   text-align: center;
-
+  font-size: 14px;
+  font-family: 'Cuprum-Regular';
+  color: #ffffff;
 }
 
-.index div a {
-font-size: 14px;
-font-family: 'Cuprum-Regular';
-color: #ffffff;
+.index a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
+.index a:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
         /*Материалы*/
 
 .materials {
-background-color: #f6b22d;
+  background-color: #f6b22d;
 
 }
 
-.materials h2::after { content: url('img/materials.png');
-position: absolute;
-right: 40px;
-width: 2em;
+.materials h2::after {
+  content: url('img/materials.png');
+  position: absolute;
+  right: 40px;
+  width: 2em;
 }
 
         /*new*/
 
-.materials::after { content: url('img/new.png');
-position: absolute;
-left: 240px;
-top:0px;
-width: 4em;
-margin-right: 0;
-margin-left: 0;
+.materials::after {
+  content: url('img/new.png');
+  position: absolute;
+  left: 240px;
+  top:0px;
+  width: 4em;
+  margin-right: 0;
+  margin-left: 0;
 }
 
-        /*Инструмент*/
+        /*tool*/
 
 .tool {
   background-color: #4aafde;
 }
 
-.tool h2::after { content: url('img/tools.png');
-position: absolute;
-right: 40px;
-width: 3em;
+.tool h2::after {
+  content: url('img/tools.png');
+  position: absolute;
+  right: 40px;
+  width: 3em;
 }
 
-        /*Техника*/
+        /*equipment*/
 
 .equipment {
   background-color: #cc79d1;
 
 }
 
-.equipment h2::after { content: url('img/equipment.png');
-position: absolute;
-right: 40px;
-width: 3em;
+.equipment h2::after {
+  content: url('img/equipment.png');
+  position: absolute;
+  right: 40px;
+  width: 3em;
 }
 
-        /*Скидки*/
+        /*discounts*/
 
 .discounts {
   background-color: #85d179;
 
 }
 
-.discounts h2::after { content: url('img/discont.png');
-position: absolute;
-right: 40px;
-width: 3em;
+.discounts h2::after {
+  content: url('img/discont.png');
+  position: absolute;
+  right: 40px;
+  width: 3em;
 }
-        /*Доставка*/
+        /*delivery*/
 
 .delivery {
   background-color: #f6b22d;
 }
 
-.delivery h2::after { content: url('img/delivery.png');
-position: absolute;
-right: 40px;
-width: 3em;
+.delivery h2::after {
+  content: url('img/delivery.png');
+  position: absolute;
+  right: 40px;
+  width: 3em;
 }
 
-        /*Слайдер*/
+        /*slider*/
 
 .index .slider {
-  background-image: url('img/slider.png');
+  position: relative;
   width: 620px;
   height: 266px;
-  position: relative;
-
 }
 
-.index .slider h2 {
-margin-left: 26px;
-margin-top: 27px;
-font-family: 'Cuprum-Bold';
-font-size: 36px;
-color: #ffffff;
+.slider h2 {
+  margin-left: 26px;
+  margin-top: 27px;
+  font-family: 'Cuprum-Bold';
+  font-size: 36px;
+  color: #ffffff;
 }
 
 .index .slider p {
-font-family: 'Cuprum-Regular';
-font-size: 18px;
-color: #ffffff;
-background-color: rgba(0, 0, 0, 0);
-margin: 0 0 0 26px;
-padding-top: 0;
-text-align: left;
-width: auto;
+  font-family: 'Cuprum-Regular';
+  font-size: 18px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0 0 0 23px;
+  padding-top: 0;
+  text-align: left;
+  width: auto;
 }
 
- .slider .slider_button {
-  margin: 108px 0 0 26px;
-  padding-top: 6px;
+.slider .slider_button {
+  margin: 205px 0 0 26px;
   width: 196px;
   height: 28px;
+}
+
+.slider_button a {
+  display: block;
+  padding-top: 10px;
+  width: 196px;
+  height: 24px;
   background-color: #ee3643;
   border: 2px solid rgba(0, 0, 0, 0);
   border-radius: 4px;
   font-family: 'Cuprum-Regular';
-  font-size: 18px;
+  font-size: 14px;
   color: #ffffff;
   text-align: center;
 }
 
-.slider::before { content:  "<";
-position: absolute;
-left: 26px;
-top: 114px;
-width: 0.5em;
-font-size: 40px;
-
-font-weight: normal;
-line-height: 1em;
-font-family: "symbols-technomart";
-text-align: center;
-text-transform: none;
-text-decoration: inherit;
-font-style: normal;
-font-variant: normal;
-speak: none;
-color: #ffffff;
+.slider a:hover {
+  background-color: #ca2c37;
 }
 
-.slider::after { content:  ">" ;
-position: absolute;
-right: 26px;
-top: 114px;
-width: 0.5em;
-margin-top: 0em;
-margin-right: 0em;
-margin-left: ;
-font-size: 40px;
-font-weight: normal;
-line-height: 1em;
-font-family: "symbols-technomart";
-text-align: center;
-text-transform: none;
-text-decoration: inherit;
-font-style: normal;
-font-variant: normal;
-speak: none;
-color: #ffffff;
+.slider a:active {
+  background-color: #ba2732;
+}
+
+.slider .left {
+   position: absolute;
+   height: 40px;
+   width: 20px;
+   left: 26px;
+   top: 114px;
+   margin: 0;
+   z-index: 1;
+}
+
+.slider .right {
+  position: absolute;
+  height: 40px;
+  width: 20px;
+  right: 26px;
+  top: 114px;
+  margin: 0;
+  z-index: 1;
+}
+
+.slider .perforators {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-image: url('img/slide_perforator.png');
+}
+
+.slider .drills {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-image: url('img/slide_drille.png');
+  visibility: hidden;
+}
+
+.slider .left::before {
+  content:  "<";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.5em;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-technomart";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+  speak: none;
+  color: #ffffff;
+}
+
+.slider .right::after {
+  content:  ">" ;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0.5em;
+  margin-top: 0em;
+  margin-right: 0em;
+  margin-left: ;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-technomart";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+  speak: none;
+  color: #ffffff;
+}
+
+.slider h2::before {
+  content: "";
+  position: absolute;
+  left: 295px;
+  top: 220px;
+  width: 6px;
+  height: 6px;
+  background: red;
+  border: 2px solid #ffffff;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
 
 
-.slider h2::before { content: "";
-position: absolute;
-left: 295px;
-top: 220px;
-width: 6px;
-height: 6px;
-background: red;
-border: 2px solid #ffffff;
--moz-border-radius: 10px;
--webkit-border-radius: 10px;
-border-radius: 10px;
+.slider h2::after {
+  content: "";
+  position: absolute;
+  left: 315px;
+  top: 220px;
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
-
-.slider h2::after { content: "";
-position: absolute;
-left: 315px;
-top: 220px;
-width: 10px;
-height: 10px;
-background: #ffffff;
--moz-border-radius: 5px;
--webkit-border-radius: 5px;
-border-radius: 5px;
+.right:active ~ .drills {
+  visibility: visible;
 }
 
 .index::after {
@@ -742,13 +801,13 @@ border-radius: 5px;
 }
 
 
-        /*Топ товаров*/
+        /*topgoods*/
 
 .topgoods {
   margin: 0 -10px;
 }
 
-        /*Заголовок топ товаров*/
+        /*topheader*/
 
 .topheader {
   margin: 10px auto 10px auto;
@@ -815,7 +874,6 @@ border-radius: 5px;
 }
 
 .new p {
-
   text-align: center;
   font-family: 'Cuprum-Bold';
   font-size: 17px;
@@ -826,13 +884,14 @@ border-radius: 5px;
   position: relative;
 }
 
-.new::after { content: url('img/new.png');
-position: absolute;
-right: -2px;
-top:0px;
-width: 4em;
-margin-right: 0;
-margin-left: 0;
+.new::after {
+  content: url('img/new.png');
+  position: absolute;
+  right: -2px;
+  top:0px;
+  width: 4em;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .goods .button {
@@ -847,13 +906,13 @@ margin-left: 0;
   border: 2px solid rgba(0, 0, 0, 0);
   border-radius: 4px 0 0 4px;
   border-right: 2px solid #ee3643;
-
   text-align: center;
   font-family: 'Cuprum-Bold';
   font-size: 17px;
   color: #ffffff;
   text-decoration: none;
 }
+
 .goods .button::after{
   content: "";
   position: absolute;
@@ -861,8 +920,8 @@ margin-left: 0;
   top: -2px;
   height: 0px;
   width: 0px;
-border: 20px solid transparent;
-border-left: 20px solid #ee3643;
+  border: 20px solid transparent;
+  border-left: 20px solid #ee3643;
 
 }
 
@@ -873,7 +932,7 @@ border-left: 20px solid #ee3643;
 }
 
 
-        /*Топ бренды*/
+        /*topbrands*/
 
 .topbrands {
   margin: 0 -10px;
@@ -893,10 +952,6 @@ border-left: 20px solid #ee3643;
 
 .logobrands img {
   vertical-align: middle;
-  /*display: block;
-  padding: 1em 1em;
-  margin: 9vh auto 0;
-transform: translateY(-50%);*/
 }
 
 .topbrands::after {
@@ -906,7 +961,7 @@ transform: translateY(-50%);*/
 }
 
 
-        /*Сервисы*/
+        /*services*/
 
 .services {
   margin-top: 85px;
@@ -950,7 +1005,6 @@ transform: translateY(-50%);*/
   background-color: #32425c;
   border-top: 1px solid #405069;
   border-bottom: 1px solid #293449;
-
   font-family:'Cuprum-Regular';
   font-size: 20px;
   color: #ffffff;
@@ -1024,22 +1078,22 @@ transform: translateY(-50%);*/
 }
 
 .about_us .button {
-padding-top: 7px;
-text-align: center;
-font-family: 'Cuprum-Regular';
-font-size: 14px;
-color: #ffffff;
-width: 220px;
-height: 27px;
-background-color: #ee3643;
-border: 2px solid rgba(0, 0, 0, 0);
-border-radius: 4px;
+  padding-top: 7px;
+  text-align: center;
+  font-family: 'Cuprum-Regular';
+  font-size: 14px;
+  color: #ffffff;
+  width: 220px;
+  height: 27px;
+  background-color: #ee3643;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
 }
 
 .details li {
-position: relative;
-margin-left: 36px;
-margin-top: 20px;
+  position: relative;
+  margin-left: 36px;
+  margin-top: 20px;
   font-family:'Cuprum-Bold';
   font-size: 18px;
   color: #000000;
@@ -1072,16 +1126,16 @@ margin-top: 20px;
 }
 
 .contacts .button {
-padding-top: 7px;
-text-align: center;
-font-family: 'Cuprum-Regular';
-font-size: 14px;
-color: #ffffff;
-width: 220px;
-height: 27px;
-background-color: #ee3643;
-border: 2px solid rgba(0, 0, 0, 0);
-border-radius: 4px;
+  padding-top: 7px;
+  text-align: center;
+  font-family: 'Cuprum-Regular';
+  font-size: 14px;
+  color: #ffffff;
+  width: 220px;
+  height: 27px;
+  background-color: #ee3643;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
 }
 
 
@@ -1121,7 +1175,7 @@ border-radius: 4px;
   margin-top: 30px;
   font-size: 18px;
   font-family: 'Cuprum-Regular';
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .footertop ul{
@@ -1135,7 +1189,6 @@ border-radius: 4px;
 .menu li {
   display: inline;
   margin-left: 60px;
-  /*margin-left: calc(100% / 11);*/
   color: #ffffff;
   font-size: 17px;
   font-family: 'Cuprum-Regular';
@@ -1149,8 +1202,7 @@ border-radius: 4px;
 
 .menu_index li {
   display: inline;
-    margin-left: 60px;
-  /*margin-left: calc(100% / 9);*/
+  margin-left: 60px;
   color: #f1c77e;
   font-size: 17px;
   font-family: 'Cuprum-Regular';
@@ -1200,27 +1252,25 @@ border-radius: 4px;
 }
 
 .vk::before {
-content: "v";
-display: inline-block;
-width: 1em;
-margin-right: 0.5em;
-margin-left: 0.7em;
-margin-top: 10px;
-
-font-weight: normal;
-line-height: 1em;
-font-family: "symbols-technomart";
-text-align: center;
-text-transform: none;
-text-decoration: inherit;
-font-style: normal;
-font-variant: normal;
-speak: none;
-color: #ffffff;
+  content: "v";
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.7em;
+  margin-top: 10px;
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-technomart";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+  speak: none;
+  color: #ffffff;
 }
 
 .facebook{
-
   float: left;
   margin-left: 5px;
   width: 40px;
@@ -1232,27 +1282,25 @@ color: #ffffff;
 }
 
 .facebook::before {
-content: "f";
-display: inline-block;
-width: 1em;
-margin-right: 0.5em;
-margin-left: 0.7em;
-margin-top: 10px;
-
-font-weight: normal;
-line-height: 1em;
-font-family: "symbols-technomart";
-text-align: center;
-text-transform: none;
-text-decoration: inherit;
-font-style: normal;
-font-variant: normal;
-speak: none;
-color: #ffffff;
+  content: "f";
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.7em;
+  margin-top: 10px;
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-technomart";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+  speak: none;
+  color: #ffffff;
 }
 
 .instagram {
-
   float: left;
   margin-left: 5px;
   width: 40px;
@@ -1264,23 +1312,22 @@ color: #ffffff;
 }
 
 .instagram::before {
-content: "\1f4f7";
-display: inline-block;
-width: 1em;
-margin-right: 0em;
-margin-left: 0.75em;
-margin-top: 10px;
-
-font-weight: normal;
-line-height: 1em;
-font-family: "symbols-technomart";
-text-align: center;
-text-transform: none;
-text-decoration: inherit;
-font-style: normal;
-font-variant: normal;
-speak: none;
-color: #ffffff;
+  content: "\1f4f7";
+  display: inline-block;
+  width: 1em;
+  margin-right: 0em;
+  margin-left: 0.75em;
+  margin-top: 10px;
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-technomart";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+  speak: none;
+  color: #ffffff;
 }
 
 .creators {
