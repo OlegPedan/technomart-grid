@@ -939,7 +939,6 @@ input#text:focus ~ button::before  {
 }
 
 .logobrands {
-  display: table-cell;
   line-height: 143px;
   text-align: center;
   width: 218px;
