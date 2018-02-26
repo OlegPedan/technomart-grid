@@ -1,0 +1,80 @@
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Cuprum-Bold';
+  src: url('fonts/web/cuprumbold.woff') format('woff'),
+  url('fonts/web/cuprumbold.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Cuprum-BoldItalic';
+  src: url('fonts/web/cuprumbolditalic.woff') format('woff'),
+  url('fonts/web/cuprumbolditalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Cuprum-Italic';
+  src: url('fonts/web/cuprumitalic.woff') format('woff'),
+  url('fonts/web/cuprumitalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Cuprum-Regular';
+  src: url('fonts/web/cuprum.woff') format('woff'),
+  url('fonts/web/cuprum.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'PTSans';
+  src:url('fonts/web/ptsans.woff') format('woff'),
+  url('fonts/web/ptsans.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'PTSans-Bold';
+  src:url('fonts/web/ptsansbold.woff') format('woff'),
+  url('fonts/web/ptsansbold.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "symbols-technomart";
+  src: url('fonts/iconfonts/symbols-technomart.woff2') format("woff"),
+       url('fonts/iconfonts/symbols-technomart.woff2') format("woff2");
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "symbols-technomart";
+  src: url("../fonts/symbols-technomart.woff") format("woff"),
+       url("../fonts/symbols-technomart.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-technomart";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+  speak: none;
+}
