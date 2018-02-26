@@ -24,11 +24,8 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
     /*header*/
-
         /*headertop*/
-
 .headertop {
   min-height: 42px;
   background-color: #293449;
@@ -45,9 +42,7 @@ a {
   font-family: 'Cuprum-Regular';
   color: #ffffff;
 }
-
         /*logo*/
-
 .logo {
   position: absolute;
   height: 46px;
@@ -55,16 +50,16 @@ a {
 }
 
 .logo a {
-  display: block;
   padding-top: 6px;
+  display: block;
   height: 36px;
+  border-bottom: 5px solid #b52933;
+  border-top: 1px solid #b52933;
+  background-color: #ee3643;
   text-align: center;
   font-size: 24px;
   font-family: 'Cuprum-Bold';
   color: #ffffff;
-  background-color: #ee3643;
-  border-bottom: 5px solid #b52933;
-  border-top: 1px solid #b52933;
 }
 
 .logo a:hover {
@@ -137,9 +132,7 @@ input#text:hover ~ button::before  {
 input#text:focus ~ button::before  {
   color: #ee3643;
 }
-
         /*bookmarks & basket*/
-
 .bookmarks {
   height: 42px;
 }
@@ -154,9 +147,9 @@ input#text:focus ~ button::before  {
 .bookmarks a::before {
   content: "\1f516";
   display: inline-block;
-  width: 1em;
   margin-right: 0.9em;
   margin-left: 1em;
+  width: 1em;
   font-weight: normal;
   line-height: 1em;
   font-family: "symbols-technomart";
@@ -223,8 +216,6 @@ input#text:focus ~ button::before  {
   clear: both;
 }
         /*headerbottom*/
-
-
 .headerbottom {
   min-height: 278px;
   background-color: #f1f5f7;
@@ -233,21 +224,16 @@ input#text:focus ~ button::before  {
 .headerbottom_main{
   min-height: 158px;
 }
-
-        /*Описание*/
-
+        /*description*/
 .description {
+  float: left;
   margin-left: 53px;
   margin-top: 42px;
-  float: left;
-  color: #ee3643;
   font-size: 16px;
   font-family: 'Cuprum-Italic';
-
+  color: #ee3643;
 }
-
-        /*телефон адрес*/
-
+        /*telefone address*/
 .contacts_header {
    margin-top: 46px;
    margin-left: 71px;
@@ -258,18 +244,18 @@ input#text:focus ~ button::before  {
   padding-top: 8px;
   height: 33px;
   width: 264px;
-  color: #e9292a;
+  border: 3px solid #ffffff;
   font-size: 21px;
   font-family: 'Cuprum-Regular';
-  border: 3px solid #ffffff;
+  color: #e9292a;
 }
 
 .telefone::before {
   content: "\1f4de";
   display: inline-block;
-  width: 1em;
   margin-right: 1.5em;
   margin-left: 0.7em;
+  width: 1em;
   font-weight: normal;
   line-height: 1em;
   font-family: "symbols-technomart";
@@ -283,14 +269,11 @@ input#text:focus ~ button::before  {
   text-align: center;
   color: #32425c;
 }
-
-        /*войти регистрация*/
-
-
+        /*login*/
 .login {
+  float: left;
   margin-top: 46px;
   margin-left: 69px;
-  float: left;
 }
 
 .entry {
@@ -298,9 +281,9 @@ input#text:focus ~ button::before  {
   float: left;
   width: 120px;
   height: 37px;
+  background-color: #ffffff;
   font-size: 21px;
   font-family: 'Cuprum-Regular';
-  background-color: #ffffff;
   color: #000000;
 }
 
@@ -312,9 +295,9 @@ input#text:focus ~ button::before  {
 .entry a::before {
   content: "⎆";
   display: inline-block;
-  width: 1em;
   margin-right: 0.5em;
   margin-left: 0.5em;
+  width: 1em;
   font-weight: normal;
   line-height: 1em;
   font-family: "symbols-technomart";
@@ -322,9 +305,9 @@ input#text:focus ~ button::before  {
 }
 
 .checkin {
+  float: left;
   padding-top: 10px;
   margin-left: 10px;
-  float: left;
   width: 150px;
   height: 37px;
   background-color: #ffffff;
@@ -353,10 +336,7 @@ input#text:focus ~ button::before  {
 .entry a:active::before {
   color: #b2b2b2;
 }
-
         /*menu headerbottom*/
-
-
 .menu_header li {
   display: inline-block;
 }
@@ -364,13 +344,14 @@ input#text:focus ~ button::before  {
 .menu_header a {
   display: block;
   min-height: 33px;
-  color: #ffffff;
-  text-align: center;
   padding-top: 17px;
+  border-bottom: 5px solid #293449;
+  background-color: #32425c;
+  text-align: center;
   font-size: 17px;
   font-family: 'Cuprum-Regular';
-  background-color: #32425c;
-  border-bottom: 5px solid #293449;
+  color: #ffffff;
+
 }
 
 .menu_header li{
@@ -385,23 +366,19 @@ input#text:focus ~ button::before  {
 .menu_header a:active {
   color: #8e939c;
 }
-
     /*main*/
-
         /*index*/
-
-
 .index {
   margin: 50px -10px 43px -10px;
 
 }
 
 .index div {
+  float: left;
+  position: relative;
   width: 300px;
   height: 123px;
-  float: left;
   margin: 10px 10px 10px 10px;
-  position: relative;
 }
 
 .index div h2 {
@@ -419,11 +396,11 @@ input#text:focus ~ button::before  {
 
 .index a {
   display: block;
-  height: 100%;
   padding-top: 10px;
-  background-color: rgba(0, 0, 0, 0.1);
+  height: 100%;
   border: 2px solid rgba(0, 0, 0, 0);
   border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 14px;
   font-family: 'Cuprum-Regular';
@@ -450,21 +427,17 @@ input#text:focus ~ button::before  {
   right: 40px;
   width: 2em;
 }
-
         /*new*/
-
 .materials::after {
   content: url('img/new.png');
   position: absolute;
   left: 240px;
   top:0px;
-  width: 4em;
   margin-right: 0;
   margin-left: 0;
+  width: 4em;
 }
-
         /*tool*/
-
 .tool {
   background-color: #4aafde;
 }
@@ -475,12 +448,9 @@ input#text:focus ~ button::before  {
   right: 40px;
   width: 3em;
 }
-
         /*equipment*/
-
 .equipment {
   background-color: #cc79d1;
-
 }
 
 .equipment h2::after {
@@ -489,12 +459,9 @@ input#text:focus ~ button::before  {
   right: 40px;
   width: 3em;
 }
-
         /*discounts*/
-
 .discounts {
   background-color: #85d179;
-
 }
 
 .discounts h2::after {
@@ -504,7 +471,6 @@ input#text:focus ~ button::before  {
   width: 3em;
 }
         /*delivery*/
-
 .delivery {
   background-color: #f6b22d;
 }
@@ -515,9 +481,7 @@ input#text:focus ~ button::before  {
   right: 40px;
   width: 3em;
 }
-
         /*slider*/
-
 .index .slider {
   position: relative;
   width: 620px;
@@ -533,17 +497,18 @@ input#text:focus ~ button::before  {
 }
 
 .index .slider p {
+  padding-top: 0;
+  margin: 0 0 0 23px;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: left;
   font-family: 'Cuprum-Regular';
   font-size: 18px;
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 0);
-  margin: 0 0 0 23px;
-  padding-top: 0;
-  text-align: left;
-  width: auto;
 }
 
 .slider .slider_button {
+  z-index: 4;
   margin: 205px 0 0 26px;
   width: 196px;
   height: 28px;
@@ -557,10 +522,10 @@ input#text:focus ~ button::before  {
   background-color: #ee3643;
   border: 2px solid rgba(0, 0, 0, 0);
   border-radius: 4px;
+  text-align: center;
   font-family: 'Cuprum-Regular';
   font-size: 14px;
   color: #ffffff;
-  text-align: center;
 }
 
 .slider a:hover {
@@ -572,40 +537,41 @@ input#text:focus ~ button::before  {
 }
 
 .slider .left {
-   position: absolute;
-   height: 40px;
-   width: 20px;
-   left: 26px;
-   top: 114px;
-   margin: 0;
-   z-index: 1;
+  position: absolute;
+  z-index: 4;
+  left: 26px;
+  top: 114px;
+  margin: 0;
+  height: 40px;
+  width: 20px;
 }
 
 .slider .right {
   position: absolute;
-  height: 40px;
-  width: 20px;
+  z-index: 4;
   right: 26px;
   top: 114px;
   margin: 0;
-  z-index: 1;
+  height: 40px;
+  width: 20px;
 }
 
 .slider .perforators {
   position: absolute;
+  z-index: 2;
+  margin: 0;
   width: 100%;
   height: 100%;
-  margin: 0;
   background-image: url('img/slide_perforator.png');
 }
 
 .slider .drills {
   position: absolute;
+  z-index: 1;
+  margin: 0;
   width: 100%;
   height: 100%;
-  margin: 0;
   background-image: url('img/slide_drille.png');
-  visibility: hidden;
 }
 
 .slider .left::before {
@@ -649,7 +615,6 @@ input#text:focus ~ button::before  {
   border-radius: 10px;
 }
 
-
 .slider h2::after {
   content: "";
   position: absolute;
@@ -662,7 +627,7 @@ input#text:focus ~ button::before  {
 }
 
 .right:active ~ .drills {
-  visibility: visible;
+  z-index: 3;
 }
 
 .index::after {
@@ -689,26 +654,25 @@ input#text:focus ~ button::before  {
 
 .topheader h2 {
   float: left;
-  min-width: 367px;
   margin: 26px 0 0 30px;
+  min-width: 367px;
   font-family: 'Cuprum-Regular';
   font-size: 30px;
-
 }
 
 .topheader p {
   float: left;
   margin: 25px 0 0 265px;
   padding-top: 10px;
-  text-align: center;
-  font-family: 'Cuprum-Regular';
-  font-size: 14px;
-  color: #ffffff;
   width: 249px;
   height: 24px;
   background-color: #ee3643;
   border: 2px solid rgba(0, 0, 0, 0);
   border-radius: 4px;
+  text-align: center;
+  font-family: 'Cuprum-Regular';
+  font-size: 14px;
+  color: #ffffff;
 }
 
 .topheader::after {
@@ -718,11 +682,11 @@ input#text:focus ~ button::before  {
 }
 
 .goods {
+  float: left;
+  padding-top: 39px;
+  margin: 10px 10px 10px 10px;
   width: 218px;
   height: 277px;
-  padding-top: 39px;
-  float: left;
-  margin: 10px 10px 10px 10px;
   border: 1px solid #f7f3ec ;
   text-align: center;
 }
@@ -760,9 +724,9 @@ input#text:focus ~ button::before  {
   position: absolute;
   right: -2px;
   top:0px;
-  width: 4em;
   margin-right: 0;
   margin-left: 0;
+  width: 4em;
 }
 
 .goods .button {
@@ -793,7 +757,6 @@ input#text:focus ~ button::before  {
   width: 0px;
   border: 20px solid transparent;
   border-left: 20px solid #ee3643;
-
 }
 
 .topgoods::after {
@@ -801,23 +764,19 @@ input#text:focus ~ button::before  {
   display: table;
   clear: both;
 }
-
-
         /*topbrands*/
-
 .topbrands {
   margin: 0 -10px;
 }
 
 .logobrands {
-  line-height: 143px;
-  text-align: center;
-  width: 218px;
-  height: 143px;
   float: left;
   margin: 10px;
+  width: 218px;
+  height: 143px;
   border: 1px solid #f7f3ec;
-
+  line-height: 143px;
+  text-align: center;
 }
 
 .logobrands img {
@@ -829,10 +788,7 @@ input#text:focus ~ button::before  {
   display: table;
   clear: both;
 }
-
-
         /*services*/
-
 .services {
   margin-top: 85px;
   padding-top: 65px;
@@ -864,12 +820,14 @@ input#text:focus ~ button::before  {
 }
 
 .services_menu {
+  position: relative;
   float: left;
   margin-right: 80px;
-  position: relative;
 }
 
 .services_menu li {
+  padding-top: 18px;
+  padding-left: 23px;
   width: 217px;
   height: 40px;
   background-color: #32425c;
@@ -878,8 +836,6 @@ input#text:focus ~ button::before  {
   font-family:'Cuprum-Regular';
   font-size: 20px;
   color: #ffffff;
-  padding-top: 18px;
-  padding-left: 23px;
 }
 
 .services_menu::after {
@@ -887,14 +843,13 @@ input#text:focus ~ button::before  {
   position: absolute;
   right: 0px;
   top: -48px;
-
 }
 
 .services_delivery {
   position: relative;
+  float: left;
   max-width: inherit;
   max-width: 275px;
-  float: left;
 }
 
 .services_delivery::after {
@@ -920,13 +875,10 @@ input#text:focus ~ button::before  {
   clear: both;
 }
 
-
-
 .details {
   margin-top: 82px;
   min-height: 536px;
 }
-
 
 .details h2 {
   font-family: 'Cuprum-Regular';
@@ -949,15 +901,15 @@ input#text:focus ~ button::before  {
 
 .about_us .button {
   padding-top: 7px;
-  text-align: center;
-  font-family: 'Cuprum-Regular';
-  font-size: 14px;
-  color: #ffffff;
   width: 220px;
   height: 27px;
   background-color: #ee3643;
   border: 2px solid rgba(0, 0, 0, 0);
   border-radius: 4px;
+  text-align: center;
+  font-family: 'Cuprum-Regular';
+  font-size: 14px;
+  color: #ffffff;
 }
 
 .details li {
@@ -971,7 +923,6 @@ input#text:focus ~ button::before  {
 
 .details ul {
   margin-top: 20px;
-
 }
 
 .details li::before {
@@ -981,9 +932,7 @@ input#text:focus ~ button::before  {
   width: 25px;
   border-top: 2px solid #fb565a;
   position: absolute;
-
 }
-
 
 .contacts {
   margin-left: 110px;
@@ -996,17 +945,16 @@ input#text:focus ~ button::before  {
 
 .contacts .button {
   padding-top: 7px;
-  text-align: center;
-  font-family: 'Cuprum-Regular';
-  font-size: 14px;
-  color: #ffffff;
   width: 220px;
   height: 27px;
   background-color: #ee3643;
   border: 2px solid rgba(0, 0, 0, 0);
   border-radius: 4px;
+  text-align: center;
+  font-family: 'Cuprum-Regular';
+  font-size: 14px;
+  color: #ffffff;
 }
-
 
 .container::after {
   content: "";
@@ -1015,8 +963,8 @@ input#text:focus ~ button::before  {
 }
 
 .footertop {
-  background-color: #32425c;
   min-height: 193px;
+  background-color: #32425c;
 }
 
 .logo_footer {
@@ -1026,19 +974,17 @@ input#text:focus ~ button::before  {
 }
 
 .logo_footer h1 {
-
   padding-top: 15px;
   height: 51px;
   width: 220px;
   background-color: #ee3643;
   border-bottom: 5px solid #b52933;
   border-top: 1px solid #b52933;
-  color: #ffffff;
   text-align: center;
   font-size: 30px;
   font-family: 'Cuprum-Bold';
+  color: #ffffff;
 }
-
 
 .logo_footer p {
   margin-top: 30px;
@@ -1049,18 +995,18 @@ input#text:focus ~ button::before  {
 
 .footertop ul{
   float: left;
-  text-align: right;
+  margin-top: 42px;
   width: 100%;
   max-width: 615px;
-  margin-top: 42px;
+  text-align: right;
 }
 
 .menu li {
   display: inline;
   margin-left: 60px;
-  color: #ffffff;
   font-size: 17px;
   font-family: 'Cuprum-Regular';
+  color: #ffffff;
 }
 
 .menu::after {
@@ -1072,9 +1018,9 @@ input#text:focus ~ button::before  {
 .menu_index li {
   display: inline;
   margin-left: 60px;
-  color: #f1c77e;
   font-size: 17px;
   font-family: 'Cuprum-Regular';
+  color: #f1c77e;
 }
 
 .menu_index::after {
@@ -1090,16 +1036,16 @@ input#text:focus ~ button::before  {
 }
 
 .footerbottom {
-  background-color: #293449;
   min-height: 107px;
+  background-color: #293449;
 }
 
 .footerbottom p {
-  margin-top: 40px;
   float: left;
-  color: #ffffff;
+  margin-top: 40px;
   font-size: 17px;
   font-family: 'Cuprum-Regular';
+  color: #ffffff;
 }
 
 .social {
@@ -1114,28 +1060,19 @@ input#text:focus ~ button::before  {
   width: 40px;
   height: 40px;
   background: #212a3a;
-  -moz-border-radius: 40px;
-  -webkit-border-radius: 40px;
   border-radius: 40px;
-
 }
 
 .vk::before {
   content: "v";
   display: inline-block;
-  width: 1em;
   margin-right: 0.5em;
   margin-left: 0.7em;
   margin-top: 10px;
+  width: 1em;
   font-weight: normal;
   line-height: 1em;
   font-family: "symbols-technomart";
-  text-align: center;
-  text-transform: none;
-  text-decoration: inherit;
-  font-style: normal;
-  font-variant: normal;
-  speak: none;
   color: #ffffff;
 }
 
@@ -1145,8 +1082,6 @@ input#text:focus ~ button::before  {
   width: 40px;
   height: 40px;
   background: #212a3a;
-  -moz-border-radius: 40px;
-  -webkit-border-radius: 40px;
   border-radius: 40px;
 }
 
@@ -1160,12 +1095,6 @@ input#text:focus ~ button::before  {
   font-weight: normal;
   line-height: 1em;
   font-family: "symbols-technomart";
-  text-align: center;
-  text-transform: none;
-  text-decoration: inherit;
-  font-style: normal;
-  font-variant: normal;
-  speak: none;
   color: #ffffff;
 }
 
@@ -1175,8 +1104,6 @@ input#text:focus ~ button::before  {
   width: 40px;
   height: 40px;
   background: #212a3a;
-  -moz-border-radius: 40px;
-  -webkit-border-radius: 40px;
   border-radius: 40px;
 }
 
@@ -1190,12 +1117,6 @@ input#text:focus ~ button::before  {
   font-weight: normal;
   line-height: 1em;
   font-family: "symbols-technomart";
-  text-align: center;
-  text-transform: none;
-  text-decoration: inherit;
-  font-style: normal;
-  font-variant: normal;
-  speak: none;
   color: #ffffff;
 }
 
@@ -1204,9 +1125,9 @@ input#text:focus ~ button::before  {
   float: left;
   margin-left: 70px;
   margin-top: 40px;
-  color: #ffffff;
   font-size: 17px;
   font-family: 'Cuprum-Regular';
+  color: #ffffff;
 }
 
 .creators a {
