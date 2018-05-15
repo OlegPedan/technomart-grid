@@ -556,21 +556,23 @@ input#text:focus ~ button::before  {
   width: 20px;
 }
 
-.slider .perforators {
-  position: absolute;
+.slider .slide {
+    position: absolute;
+    z-index: 1;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slider .active {
   z-index: 2;
-  margin: 0;
-  width: 100%;
-  height: 100%;
+}
+
+.slider .perforators {
   background-image: url('img/slide_perforator.png');
 }
 
 .slider .drills {
-  position: absolute;
-  z-index: 1;
-  margin: 0;
-  width: 100%;
-  height: 100%;
   background-image: url('img/slide_drille.png');
 }
 
@@ -626,9 +628,12 @@ input#text:focus ~ button::before  {
   border-radius: 5px;
 }
 
-.right:active ~ .drills {
+.slide-change {
   z-index: 3;
 }
+/*.right:active ~ .drills {
+  z-index: 3;
+}*/
 
 .index::after {
   content: "";

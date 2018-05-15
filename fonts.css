@@ -58,8 +58,8 @@
   font-weight: normal;
   font-style: normal;
   font-family: "symbols-technomart";
-  src: url("../fonts/symbols-technomart.woff") format("woff"),
-       url("../fonts/symbols-technomart.woff2") format("woff2");
+  src: url("fonts/iconfonts/symbols-technomart.woff") format("woff"),
+       url("fonts/iconfonts/symbols-technomart.woff2") format("woff2");
 }
 
 [class^="icon-"]::before,
